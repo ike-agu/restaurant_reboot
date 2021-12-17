@@ -16,4 +16,10 @@ class Restaurant
   def book(client_name)
     @clients << client_name
   end
+
+  def print_clients
+    @clients.each do |client|
+      puts "-#{client}"
+    end
+  end
 end
