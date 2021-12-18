@@ -1,6 +1,7 @@
 class Restaurant
-  attr_reader :name, :city, :capacity
-  attr_writer :capacity
+  attr_reader :name, :city
+  attr_accessor :capacity
+
   def initialize(name, city, capacity, category)
     @name = name
     @city = city
