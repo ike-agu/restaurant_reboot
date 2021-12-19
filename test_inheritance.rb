@@ -14,4 +14,4 @@ puts
 puts " clients for #{cipriani.name} "
 cipriani.print_clients
 puts "is #{burger_king.name} open at #{Time.now.hour} O' clock today"
-puts burger_king.open? ? 'yes! it is open' : 'No! it is closed'
+puts burger_king.open? ? 'yes! it is open' : 'No! it is closed, it opens between 11 - 12 and 18 - 22'
