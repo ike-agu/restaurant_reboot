@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'restaurant'
 
 gozie = Restaurant.new('gozie', 'lagos', 50, 'Nigerian cuisine')

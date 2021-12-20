@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'fastfood_restaurant'
 require_relative 'gastronomic_restaurant'
 

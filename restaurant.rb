@@ -1,16 +1,22 @@
+# frozen_string_literal: true
+
+require_relative 'chef'
+
 class Restaurant
-  attr_reader :name, :city
+  attr_reader :name, :city, :chef
   attr_accessor :capacity
 
   def self.categories
     %w[French Italian Bristish]
   end
 
-  def initialize(name, city, capacity, category)
+  def initialize(name, city, capacity, category, chef_name)
     @name = name
     @city = city
     @capacity = capacity
     @category = category
+    @chef = Chef.new(chef_name, self)
+
     @clients = []
   end
 
