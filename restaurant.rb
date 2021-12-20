@@ -2,6 +2,10 @@ class Restaurant
   attr_reader :name, :city
   attr_accessor :capacity
 
+  def self.categories
+    %w[French Italian Bristish]
+  end
+
   def initialize(name, city, capacity, category)
     @name = name
     @city = city
@@ -19,6 +23,8 @@ class Restaurant
   end
 
   def print_clients
+    puts 'these are the categories we have'
+    puts Restaurant.categories
     @clients.each do |client|
       puts "-#{client}"
     end
