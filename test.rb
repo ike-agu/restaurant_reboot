@@ -2,7 +2,7 @@
 
 require_relative 'restaurant'
 
-gozie = Restaurant.new('gozie', 'lagos', 50, 'Nigerian cuisine')
+gozie = Restaurant.new('gozie', 'lagos', 50, 'Nigerian cuisine', 'Gordan Ramsay')
 
 puts "#{gozie.name} restaurant is located in #{gozie.city}"
 puts "#{gozie.name} restaurant can host #{gozie.capacity} people"
